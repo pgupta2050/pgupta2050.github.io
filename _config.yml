@@ -5,12 +5,11 @@ plugins:
 gem "github-pages", group: :jekyll_plugins
 
 
-title: Prakhar's Projects
+title: Prakhar Gupta
 description: Here are some interesting projects I have undertaken.
-
 
 
 header_pages:
   - index.md
-  - _pages/home.md
-  - _pages/projects.md
+  - /_pages/home.md
+  - /_pages/projects.md
