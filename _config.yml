@@ -6,7 +6,7 @@
 
 
 theme: minima
-gem "minima"
+# gem "minima"
 
 
 title: Prakhar Gupta
