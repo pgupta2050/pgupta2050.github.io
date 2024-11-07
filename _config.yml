@@ -20,6 +20,3 @@ header_pages:
 
 include:
   - _pages
-
-exclude: 
-    - Gemfile
