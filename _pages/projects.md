@@ -7,4 +7,4 @@ permalink: /projects/
 # List of my projects
 ... with and without collaborators
 
-[Projects](/projects/)
+[Projects](/_pages/projects.md/)

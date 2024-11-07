@@ -7,4 +7,4 @@ permalink: /about/
 # About Me
 Welcome to my site! Here’s a bit about me...
 
-[About Me](/about/)
+[About Me](/_pages/about/)
