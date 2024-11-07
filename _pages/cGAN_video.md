@@ -4,4 +4,4 @@ title: "Video Frame Prediciton"
 permalink: /projects/proj-cgan/
 ---
 
-Noice.
+Let me finish it first, OK?
