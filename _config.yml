@@ -12,5 +12,5 @@ description: Here are some interesting projects I have undertaken.
 
 header_pages:
   - index.md
-  - home.md
-  - projects.md
+  - _pages/home.md
+  - _pages/projects.md
