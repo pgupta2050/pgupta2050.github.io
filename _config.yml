@@ -6,7 +6,7 @@
 
 
 theme: minima
-
+gem "minima"
 
 
 title: Prakhar Gupta
@@ -16,5 +16,5 @@ description: Here are some interesting projects I have undertaken.
 
 header_pages:
   - index.md
-  - /_pages/home.md
-  - /_pages/projects.md
+  - home.md
+  - projects.md
