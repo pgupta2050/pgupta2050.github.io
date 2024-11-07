@@ -4,7 +4,12 @@ title: "Projects"
 permalink: /projects/
 ---
 
-# List of my projects
-... with and without collaborators
+Some are with fellow students and researchers. Others are carried out on my own.
 
-[Projects](/prakhargupta/_pages/projects.md/)
+## Conditional GAN for Video Frame Prediction:
+
+With Mayuresh Bhosale for CPSC8810 ML for ImageSynthesis
+
+
+
+<!-- [Projects](/prakhargupta/_pages/projects.md/) -->
