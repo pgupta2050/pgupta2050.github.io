@@ -2,7 +2,7 @@
 
 # plugins:
 # - jekyll-remote-theme # add this line to the plugins list if you already have one
-# gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 
 
 theme: minima
@@ -10,7 +10,7 @@ theme: minima
 
 
 title: Prakhar Gupta
-description: Here are some interesting projects I have undertaken.
+description: Learning the future of robotics. :)
 
 
 header_pages:
