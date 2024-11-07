@@ -1,9 +1,4 @@
-# remote_theme: pages-themes/minimal@v0.2.0
-
-# plugins:
-# - jekyll-remote-theme # add this line to the plugins list if you already have one
 gem "github-pages", group: :jekyll_plugins
-
 
 theme: minima
 
@@ -14,7 +9,8 @@ plugins:
 
 title: Prakhar Gupta
 description: Learning the future of robotics. :)
-
+author: Prakhar Gupta
+email: prakhag@clemson.edu
 
 header_pages:
   - _pages/home.md
@@ -26,3 +22,4 @@ include:
 
 # Minima social links
 linkedin_username: prakharkalyangupta
+github_username:  pgupta2050
