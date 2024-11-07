@@ -7,3 +7,10 @@ gem "github-pages", group: :jekyll_plugins
 
 title: Prakhar's Projects
 description: Here are some interesting projects I have undertaken.
+
+
+
+header_pages:
+  - index.md
+  - home.md
+  - projects.md
