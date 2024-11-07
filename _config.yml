@@ -5,8 +5,8 @@
 theme: minima
 # Minima theme configuration for header links
 header_pages:
-  - index.md
-  - about.md  # Add your new page here
+  - home.md
+  - projects.md  # Add your new page here
 
 
 
