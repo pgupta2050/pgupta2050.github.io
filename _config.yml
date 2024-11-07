@@ -13,10 +13,6 @@ title: Prakhar Gupta
 description: Here are some interesting projects I have undertaken.
 
 
-
 header_pages:
   - _pages/home.md
   - _pages/projects.md
-
-include:
-  - _pages
