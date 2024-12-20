@@ -1,15 +1,19 @@
 body {
-    background-color: #f0f0f06b;
+    background-color: #f0f0f057;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #161336;
     color: white;
-    padding: 1em;
-    text-align: center;
+    padding: 1em 1em 1em 1em; /* Remove top padding */
+    text-align: left;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -25,18 +29,46 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 0em 0em 0em 0em ;
 }
 
 main {
     padding: 2em;
+    max-width: 1200px; /* Set a maximum width for the main content */
+    margin: 0 auto; /* Center the main content */
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
+    background-color: #9b905660;
+    color: rgb(12, 11, 11);
     position: fixed;
     width: 100%;
-    bottom: 0;
+    bottom: 0%;
+    padding: 0em 0em 0em 0em;
+    text-align: center;
+    height: 40px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    color: #161336; /* Change this color to your desired color */
+}
+
+a {
+    color: #442a07; /* Change this color to your desired color */
+}
+
+.social-link.linkedin {
+    color: #0077B5; /* LinkedIn color */
+}
+
+.social-link.github {
+    color: #333; /* GitHub color */
+}
+
+.highlight_footerText {
+    background-color: rgb(255, 255, 255); /* Highlight color */
+    padding: 0.2em; /* Optional: add some padding for better appearance */
 }
