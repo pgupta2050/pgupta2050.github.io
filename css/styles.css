@@ -76,14 +76,6 @@ a {
     padding: 0.2em; /* Optional: add some padding for better appearance */
 }
 
-.left, .right {
-    flex: 1;
-    padding: 20px;
-}
-
-.left {
-    border-right: 2px solid #ddd;
-}
 
 .container {
     display: flex;
@@ -92,4 +84,13 @@ a {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+}
+
+.left {
+    border-right: 2px solid #ddd;
 }
