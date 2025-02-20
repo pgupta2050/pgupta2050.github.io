@@ -37,6 +37,27 @@ nav ul li a {
     padding: 0em 0em 0em 0em ;
 }
 
+/* Attmept to make header nice for mobile */
+header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    header h3 {
+        font-size: 1.5rem; /* Adjust h3 size for mobile */
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Adjust link size for mobile */
+    }
+}
+
+
 ul {
     line-height: 1.2em; /* Adjust spacing within list items */
 }
@@ -88,7 +109,10 @@ h2 {
 a {
     color: #62929E ; /* Change this color to your desired color #1cb97d #FFA5A5*/
 }
-
+a:hover {
+    color: #486a72; /* Darker shade when hovered */
+    text-decoration: underline; /* Removes underline on hover */
+}
 
 .paper{
     color: #62929E;
@@ -98,12 +122,10 @@ a {
     /* color: #F7D08A; */
     font-weight: bold;
 }
-
 .paper a {
     color: #62929E; /* Custom hyperlink color */
     text-decoration: none; /* Ensures links are underline-free */
 }
-
 .paper a:hover {
     color: #486a72; /* Darker shade when hovered */
     text-decoration: underline; /* Removes underline on hover */
