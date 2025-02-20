@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesProjects.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
 </head>
@@ -33,97 +34,113 @@
 
 
     <main>
+
     <section>
-  
 
-<h2>Learning Augmented Model-Based Optimization Controls (2022-2024)</h2>
-<p><strong>Advisor:</strong> <a target="_blank" href="https://sites.google.com/view/cra-lab/welcome?authuser=0">Dr. Yunyi Jia</a>, Associate Professor, Clemson University</p>
-<p><strong>Funding:</strong> Department of Defense through VIPR-GS</p>
-<ul>
-    <li>Research aims to reduce data dependency by leveraging nominal models and increasing generalization of the controller across different driving conditions</li>
-    <li>Formulated and investigated a hybrid reinforcement learning architecture to handle modeling mismatches and unmodeled system dynamics
-    <!-- <img src="images/architecture.png" alt="Actor-Critic Cooperative Compensation to MPC" width="700"> -->
-        <div style="background-color: white; display: inline-block; padding: 10px;">
-            <img src="images/architecture.png" alt="Actor-Critic Cooperative Compensation to MPC" width="700">
-        </div>
-    </li>
-    <li>Validating simulation results on a drive-by-wire Polaris RZR vehicle on off-road terrains (<a href="https://drive.google.com/file/d/16iGDZUhORoUeUQKTEyXh66w7balQFM2e/view?usp=drive_link">Off-road Autonomous Video</a>)</li>
-</ul>
-
-<br><br><br>
-
-<h2>Energy Efficient Cooperative Driving (2022-2024)</h2>
-<p><strong>Advisors:</strong> Dr. Yunyi Jia, <a target="_blank" href="https://scholar.google.com/citations?user=sXBWHH4AAAAJ&hl=en">Dr. Ardalan Vahidi</a>, Clemson University</p>
-<p><strong>Funding:</strong> Department of Energy through Argonne National Laboratory</p>
-<ul>
-    <li>Research aims to improve energy efficiency through V2V, V2I connectivity by informing lane switching and acceleration strategy on connected traffic corridors</li>
-    <li>Experimental results on an in-house drive-by-wire Mazda CX7 showed up to 36% improvements</li>
-    <li>Expert skills for on-vehicle control deployment using MPC and other state-of-the-art controllers</li>
-</ul>
-
-<br><br><br>
-
-<h2> Conditional GAN for Video Frame Prediction </h2>
-
-<p> We build upon the ideas from Retrospective Cycle GAN (Kwon et al). They established great performance compared to the SOTA with their forward and backward temporal consistency idea for training the generator. However, they do not consider any conditionong on physics or restrict the movement of pixels expicitly. We ask the following quesiton: "Can we improve blurring in longer term predictions through the use of physics constraints?" </p>
-
-<ol>
-    <p> Future Video Frame Prediciton performance with conditional GAN is shown in the above image. More details can be found in the <a target="_blank" href="https://pgupta2050.github.io/conditional_rcgan/">project webpage</a> </p>
-    <!-- <img src="images/cond_rc_gan_results_e99.png" alt="Future Video Frame Prediciton with conditional GAN" width="700"> -->
-    <embed src="https://pgupta2050.github.io/conditional_rcgan/" style="width:800px; height: 400px;">
-</ol>
+        <h2>Learning Augmented Model-Based Optimization Controls (2022-2024)</h2>
+        <p><strong>Advisor:</strong> <a target="_blank" href="https://sites.google.com/view/cra-lab/welcome?authuser=0">Dr. Yunyi Jia</a>, Associate Professor, Clemson University</p>
+        <p><strong>Funding:</strong> Department of Defense through VIPR-GS</p>
+        <ul>
+            <li>Research aims to reduce data dependency by leveraging nominal models and increasing generalization of the controller across different driving conditions</li>
+            <li>Formulated and investigated a hybrid reinforcement learning architecture to handle modeling mismatches and unmodeled system dynamics<br>
+                <!-- <div style="background-color: white; display: inline-block; padding: 10px;">
+                    <img src="images/architecture.png" alt="Actor-Critic Cooperative Compensation to MPC" width=100% max-width=500px>
+                </div> -->
+                <div class="image-container">
+                    <img src="images/architecture.png" alt="Actor-Critic Cooperative Compensation to MPC">
+                </div>
+            </li>
+            <li>Validating simulation results on a drive-by-wire Polaris RZR vehicle on off-road terrains (<a href="https://drive.google.com/file/d/16iGDZUhORoUeUQKTEyXh66w7balQFM2e/view?usp=drive_link">Off-road Autonomous Video</a>)</li>
+        </ul>
+    </section>
 
 
-<br><br><br>
+    <section>
+        <h2>Energy Efficient Cooperative Driving (2022-2024)</h2>
+        <p><strong>Advisors:</strong> Dr. Yunyi Jia, <a target="_blank" href="https://scholar.google.com/citations?user=sXBWHH4AAAAJ&hl=en">Dr. Ardalan Vahidi</a>, Clemson University</p>
+        <p><strong>Funding:</strong> Department of Energy through Argonne National Laboratory</p>
+        <ul>
+            <li>Research aims to improve energy efficiency through V2V, V2I connectivity by informing lane switching and acceleration strategy on connected traffic corridors</li>
+            <li>Experimental results on an in-house drive-by-wire Mazda CX7 showed up to 36% improvements</li>
+            <li>Expert skills for on-vehicle control deployment using MPC and other state-of-the-art controllers</li>
+        </ul>
+    </section>
 
-<h2>Deep Orange 13 (2021-2022)</h2>
-<p><strong>Advisor:</strong> <a target="_blank" href="https://scholar.google.com/citations?user=6161b6wAAAAJ&hl=en">Dr. Chris Paredis</a>, Professor Emeritus, Clemson University</p>
-<p><strong>Funding:</strong> Department of Defense through VIPR-GS</p>
-<ul>
-    <li>Implemented fully autonomous navigation for off-road driving using cameras, lidars, GNSS over ROS (Robot Operating Software) on small and full-scale platforms</li>
-    <li>Designed and developed in-house Drive-by-Wire vehicle controls architecture using New Eagle Raptor controller and ROS with C++ and Python</li>
-    <li>H-i-L and S-i-L testing for vehicle controls</li>
-    <li>Communications and vehicle networking using CAN, Ethernet, wireless short-range communications</li>
-    <!-- <li>Autonomous Driving: <a target="_blank" href="https://youtu.be/-3aHWvhB948?si=D0msltdSMgwJUbz3">Unmanned Autonomous Deep Orange 13-14</a>, <a href="https://drive.google.com/file/d/1lENI4qCQLdiGndaWNEGr-9OBTlcZHGf_/view?usp=sharing">Manned Autonomous</a></li> -->
-    <li> Autonomous Driving:
-        <ol> 
-            <iframe width="400" height="270" src="https://www.youtube.com/embed/-3aHWvhB948?si=nxTh78r6tBTcewFl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
-            <iframe width="400" height="270" src="https://www.youtube.com/embed/B7_-ia0J6QU?si=_3jAVg8k1q66tMSX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
-        </ol>
-    </li>
-    <li> Manned Autonomous: 
+        <!-- <br><br><br> -->
+    <section>
+        <h2> Conditional GAN for Video Frame Prediction </h2>
+
+        <p> We build upon the ideas from Retrospective Cycle GAN (Kwon et al). They established great performance compared to the SOTA with their forward and backward temporal consistency idea for training the generator. However, they do not consider any conditionong on physics or restrict the movement of pixels expicitly. We ask the following quesiton: "Can we improve blurring in longer term predictions through the use of physics constraints?" </p>
+
         <ol>
-            <iframe src="https://drive.google.com/file/d/1lENI4qCQLdiGndaWNEGr-9OBTlcZHGf_/preview" width="440" height="300" allow="autoplay" ></iframe>
+            <p> Future Video Frame Prediciton performance with conditional GAN is shown in the above image. More details can be found in the <a target="_blank" href="https://pgupta2050.github.io/conditional_rcgan/">project webpage</a> </p>
+            <embed src="https://pgupta2050.github.io/conditional_rcgan/" style="width:100%; height: 400px; max-width: 700px;">
         </ol>
-    </li>
-</ul>
+    </section>
 
-<br><br><br>
 
-<h2>Collaborative Monitoring of Road Conditions (2021-2022)</h2>
-<p><strong>Advisor:</strong> Dr. Yunyi Jia, Clemson University</p>
-<p><strong>Funding:</strong> SC Department of Transportation</p>
-<ul>
-    <li>Research aims to utilize deep learning and cloud architecture to augment road condition monitoring</li>
-    <li>Object detection neural networks were trained to identify road defects that need attention using just smartphone sensors like IMU and camera. 
-        <ol>
-            <a target="_blank" href="https://drive.google.com/file/d/1S48DQnX5d-AH48jrjvJPd43R-VvrYvMR/view?usp=sharing">Best Poster Award</a>
-        </ol>
-    </li>
-    <li>
-        Research poster:<br>
-        <iframe src="https://drive.google.com/file/d/1W1pB7dkXxBn3p03qk3-6ws8ii_1h-P2S/preview" width="640" height="480" allow="autoplay"></iframe>
-    </li>
-</ul>
+        <!-- <br><br><br> -->
+    <section>
+        <h2>Deep Orange 13 (2021-2022)</h2>
+        <p><strong>Advisor:</strong> <a target="_blank" href="https://scholar.google.com/citations?user=6161b6wAAAAJ&hl=en">Dr. Chris Paredis</a>, Professor Emeritus, Clemson University</p>
+        <p><strong>Funding:</strong> Department of Defense through VIPR-GS</p>
+        <ul>
+            <li>Implemented fully autonomous navigation for off-road driving using cameras, lidars, GNSS over ROS (Robot Operating Software) on small and full-scale platforms</li>
+            <li>Designed and developed in-house Drive-by-Wire vehicle controls architecture using New Eagle Raptor controller and ROS with C++ and Python</li>
+            <li>H-i-L and S-i-L testing for vehicle controls</li>
+            <li>Communications and vehicle networking using CAN, Ethernet, wireless short-range communications</li>
+            <!-- <li>Autonomous Driving: <a target="_blank" href="https://youtu.be/-3aHWvhB948?si=D0msltdSMgwJUbz3">Unmanned Autonomous Deep Orange 13-14</a>, <a href="https://drive.google.com/file/d/1lENI4qCQLdiGndaWNEGr-9OBTlcZHGf_/view?usp=sharing">Manned Autonomous</a></li> -->
+            <li> Autonomous Driving:
+                <ol> 
+                    <iframe width="400" height="270" src="https://www.youtube.com/embed/-3aHWvhB948?si=nxTh78r6tBTcewFl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+                    <iframe width="400" height="270" src="https://www.youtube.com/embed/B7_-ia0J6QU?si=_3jAVg8k1q66tMSX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+                </ol>
+            </li>
+            <li> Manned Autonomous: 
+                <ol>
+                    <iframe src="https://drive.google.com/file/d/1lENI4qCQLdiGndaWNEGr-9OBTlcZHGf_/preview" width="440" height="300" allow="autoplay" ></iframe>
+                </ol>
+            </li>
+        </ul>
+    </section>
 
-<br><br><br>
 
-<h2>Hexapod Inverse Kinematics (2021)</h2>
-<p><strong>Advisor:</strong> <a target="_blank" href="https://sites.google.com/view/armlab-cuicar/">Dr. Venkat Krovi</a>, Professor, Clemson University</p>
-<ul>
-    <li>Implemented a planar cable robot and designed a controller using Quanser’s Hexapod hardware in HiL simulation</li>
-    <li>Formulated inverse and forward kinematics for the cable robot</li>
-</ul>
+
+    <section>
+        <h2>Collaborative Monitoring of Road Conditions (2021-2022)</h2>
+        <p><strong>Advisor:</strong> Dr. Yunyi Jia, Clemson University</p>
+        <p><strong>Funding:</strong> SC Department of Transportation</p>
+        <ul>
+            <li>Research aims to utilize deep learning and cloud architecture to augment road condition monitoring</li>
+            <li>Object detection neural networks were trained to identify road defects that need attention using just smartphone sensors like IMU and camera. 
+                <ol>
+                    <a target="_blank" href="https://drive.google.com/file/d/1S48DQnX5d-AH48jrjvJPd43R-VvrYvMR/view?usp=sharing">Best Poster Award</a>
+                </ol>
+            </li>
+            <li>
+                Research poster:<br>
+                <!-- <iframe src="https://drive.google.com/file/d/1W1pB7dkXxBn3p03qk3-6ws8ii_1h-P2S/preview" width="70%" height="500"  max-width="700px" allow="autoplay"></iframe> -->
+                
+                <div style="position:relative; padding-top:500px; width:100%; max-width:700px; height:0;">
+                    <iframe src="https://drive.google.com/file/d/1W1pB7dkXxBn3p03qk3-6ws8ii_1h-P2S/preview" 
+                            style="position:absolute; top:0; left:0; width:100%; height:100%;" 
+                            allow="autoplay"></iframe>
+                </div>
+
+            </li>
+            
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>Hexapod Inverse Kinematics (2021)</h2>
+        <p><strong>Advisor:</strong> <a target="_blank" href="https://sites.google.com/view/armlab-cuicar/">Dr. Venkat Krovi</a>, Professor, Clemson University</p>
+        <ul>
+            <li>Implemented a planar cable robot and designed a controller using Quanser’s Hexapod hardware in HiL simulation</li>
+            <li>Formulated inverse and forward kinematics for the cable robot</li>
+        </ul>
+    </section>
 
     </main>
 

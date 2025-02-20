@@ -53,9 +53,15 @@ ol li {
 
 main {
     padding: 2em;
-    max-width: 1200px; /* Set a maximum width for the main content */
+    max-width: 1500px; /* Set a maximum width for the main content */
     margin: 0 auto; /* Center the main content */
     flex: 1;
+}
+
+/* Add some spacing between sections */
+main section {
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 footer {
@@ -113,7 +119,7 @@ a {
 
 .social-link.scholar
 {
-    color: #7dbbca; /* Google Scholar color */
+    color: #77b0be; /* Google Scholar color */
 }
 
 .highlight_footerText {
@@ -124,7 +130,7 @@ a {
 
 .container {
     display: flex;
-    max-width: 1000px;
+    max-width: max-content;
     background: #1f2d33;
     /* background: rgb(56, 34, 21); */
     padding: 20px;
