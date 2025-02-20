@@ -1,6 +1,7 @@
 body {
-    background-color: #100007;
-    font-family: 'Trebuchet MS';
+    background-color: #030203;
+    /* #10007 */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     /* Arial, sans-serif; */
     margin: 0;
     padding-bottom: 20px;
@@ -26,16 +27,28 @@ nav ul {
     list-style-type: none;
     padding: 0;
 }
-
 nav ul li {
     display: inline;
     margin-right: 1em;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
     padding: 0em 0em 0em 0em ;
+}
+
+ul {
+    line-height: 1.2em; /* Adjust spacing within list items */
+}
+ul li {
+    margin-bottom: 0.4em; /* Adjust spacing between list items */
+}
+
+ol {
+    line-height: 1.1em; /* Adjust spacing within list items */
+}
+ol li {
+    margin-bottom: 1.0em; /* Adjust spacing between list items */
 }
 
 main {
@@ -68,6 +81,12 @@ h2 {
 
 a {
     color: #62929E ; /* Change this color to your desired color #1cb97d #FFA5A5*/
+}
+
+
+.paper{
+    color: #62929E;
+    font-weight: bold;
 }
 
 .social-link.linkedin {
