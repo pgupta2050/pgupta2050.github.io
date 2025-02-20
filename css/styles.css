@@ -86,7 +86,21 @@ a {
 
 .paper{
     color: #62929E;
+    /* color: #F1FFE7; */
+    /* color: #EEE0CB; */
+    /* color: #D3F6DB; */
+    /* color: #F7D08A; */
     font-weight: bold;
+}
+
+.paper a {
+    color: #62929E; /* Custom hyperlink color */
+    text-decoration: none; /* Ensures links are underline-free */
+}
+
+.paper a:hover {
+    color: #486a72; /* Darker shade when hovered */
+    text-decoration: underline; /* Removes underline on hover */
 }
 
 .social-link.linkedin {
@@ -94,7 +108,12 @@ a {
 }
 
 .social-link.github {
-    color: #333; /* GitHub color */
+    color: #C6C5B9; /* GitHub color */
+}
+
+.social-link.scholar
+{
+    color: #7dbbca; /* Google Scholar color */
 }
 
 .highlight_footerText {
@@ -106,7 +125,8 @@ a {
 .container {
     display: flex;
     max-width: 1000px;
-    background: rgb(56, 34, 21);
+    background: #1f2d33;
+    /* background: rgb(56, 34, 21); */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
