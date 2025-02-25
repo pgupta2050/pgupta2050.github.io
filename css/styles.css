@@ -159,12 +159,45 @@ a:hover {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.left, .right {
+/* .left, .right {
     flex: 1;
     padding: 20px;
 }
-
 .left {
     border-right: 2px solid #ddd;
+} */
+.left {
+    flex: auto; /* Smaller section */
+    padding: 20px;
+    border-right: 2px solid #ddd; /* Partition moved to the left */
+}
+
+.right {
+    flex-shrink: 0; /* Larger section */
+    padding: 20px;
+}
+.containerSingle {
+    display: auto;
+    max-width: auto;
+    background: #1f2d33;
+    /* background: rgb(56, 34, 21); */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container {
+    background-color: white;
+    display: inline-block;
+    padding: 0px;
+    width: 100%; /* Ensures it takes full section width */
+    /* max-width: 180px; */
+    text-align: center; /* Centers the image */
+}
+.photo-container img {
+    width: 100%; /* Adapts to smaller section width */
+    max-width: 180px; /* Prevents exceeding these px */
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Removes extra spacing */
+    margin: 0 auto; /* Centers the image */
 }
