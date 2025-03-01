@@ -16,7 +16,7 @@ header {
      /* rgb(70, 70, 70); */
     color: white;
     padding: 1em 1em 1em 1em; /* Remove top padding */
-    text-align: left;
+    /* text-align: left; */
     height: 20px;
     display: flex;
     justify-content: space-between;
@@ -24,8 +24,11 @@ header {
 }
 
 nav ul {
+    list-style: none;
     list-style-type: none;
+    display: flex;
     padding: 0;
+    gap: 15px;
 }
 nav ul li {
     display: inline;
@@ -35,25 +38,33 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 0em 0em 0em 0em ;
+    font-size: clamp(14px, 1.8vw, 18px); /* Ensures readability */
 }
 
 /* Attmept to make header nice for mobile */
 header h3 {
     font-size: 1.5rem;
     margin-bottom: 25px;
+    margin: 0;
+    font-size: clamp(16px, 2vw, 24px); /*Adapts based on screen size*/
 }
-/* Media query for smaller screens */
+header h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Mobile Adjustments */
 @media (max-width: 600px) {
-    header h3 {
-        font-size: 1.5rem; /* Adjust h3 size for mobile */
+    header {
+        flex-direction: row;
+        text-align: center;
+        padding: 15px;
     }
 
-    nav ul li {
-        margin: 0 10px;
-    }
-
-    nav ul li a {
-        font-size: 0.9rem; /* Adjust link size for mobile */
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+        padding-top: 10px;
     }
 }
 
@@ -107,7 +118,7 @@ h2 {
 }
 
 a {
-    color: #62929E ; /* Change this color to your desired color #1cb97d #FFA5A5*/
+    color: #62929E ; /* Custom hyperlink color */
 }
 a:hover {
     color: #486a72; /* Darker shade when hovered */
@@ -152,52 +163,100 @@ a:hover {
 
 .container {
     display: flex;
-    max-width: max-content;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    gap: 20px;
     background: #1f2d33;
-    /* background: rgb(56, 34, 21); */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* .left, .right {
-    flex: 1;
+
+.left {
+    flex: 4 1 300px; /* Auto-adjusts width, min 300px */
     padding: 20px;
+    /* border-right: 2px solid #ddd; */
+    text-align: center;
 }
-.left {
-    border-right: 2px solid #ddd;
-} */
-.left {
-    flex: auto; /* Smaller section */
+.right {
+    flex: 1 1 300px; /* Image section gets priority */
     padding: 20px;
-    border-right: 2px solid #ddd; /* Partition moved to the left */
+    text-align: center;
+}
+.right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-.right {
-    flex-shrink: 0; /* Larger section */
-    padding: 20px;
-}
 .containerSingle {
     display: auto;
     max-width: auto;
     background: #1f2d33;
-    /* background: rgb(56, 34, 21); */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.photo-container {
-    background-color: white;
-    display: inline-block;
-    padding: 0px;
-    width: 100%; /* Ensures it takes full section width */
-    /* max-width: 180px; */
-    text-align: center; /* Centers the image */
+.skills-container {
+    display: grid;
+    max-width: auto;
+    grid-template-columns: 1fr 3fr; /* Category takes less space, badges take more */
+    gap: 20px;
+    align-items: center;
+    /* max-width: 800px; */
+    margin: 20px auto;
+    padding: 20px;
+    background: #1f2d33;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-.photo-container img {
-    width: 100%; /* Adapts to smaller section width */
-    max-width: 180px; /* Prevents exceeding these px */
-    height: auto; /* Keeps the aspect ratio */
-    display: block; /* Removes extra spacing */
-    margin: 0 auto; /* Centers the image */
+/* Heading Style */
+.skills-heading {
+    grid-column: span 2; /* Make heading span both columns */
+    text-align: center;
+    font-size: 24px;
+    color: #C6C5B9;
+    margin-bottom: 15px;
+}
+/* Category styling */
+.skill-category {
+    font-weight: bold;
+    color: #C6C5B9;
+    text-align: right;
+    padding-right: 15px;
+}
+/* Badge styling */
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.skill {
+    background: linear-gradient(135deg, #2a3e47, #3c5866);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+/* Hover Effect */
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+}
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr; /* Stack category and badges */
+        text-align: center;
+    }
+    .skill-category {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
 }

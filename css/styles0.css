@@ -1,0 +1,203 @@
+body {
+    background-color: #030203;
+    /* #10007 */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    /* Arial, sans-serif; */
+    margin: 0;
+    padding-bottom: 20px;
+    color: #C6C5B9;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+header {
+    background-color: #314852;
+     /* rgb(70, 70, 70); */
+    color: white;
+    padding: 1em 1em 1em 1em; /* Remove top padding */
+    text-align: left;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0em 0em 0em 0em ;
+}
+
+/* Attmept to make header nice for mobile */
+header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    header h3 {
+        font-size: 1.5rem; /* Adjust h3 size for mobile */
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Adjust link size for mobile */
+    }
+}
+
+
+ul {
+    line-height: 1.2em; /* Adjust spacing within list items */
+}
+ul li {
+    margin-bottom: 0.4em; /* Adjust spacing between list items */
+}
+
+ol {
+    line-height: 1.1em; /* Adjust spacing within list items */
+}
+ol li {
+    margin-bottom: 1.0em; /* Adjust spacing between list items */
+}
+
+main {
+    padding: 2em;
+    max-width: 1500px; /* Set a maximum width for the main content */
+    margin: 0 auto; /* Center the main content */
+    flex: 1;
+}
+
+/* Add some spacing between sections */
+main section {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+footer {
+    background-color: hsl(120, 19%, 74%);
+    color: rgb(12, 11, 11);
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    padding: 0em 0em 0em 0em;
+    text-align: center;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end; /* space-between; */
+    align-items: center;
+    opacity: 0.7;
+    font-size: smaller;
+    
+}
+
+h2 {
+    color: #965523; /* Change this color to your desired color */
+}
+
+a {
+    color: #62929E ; /* Change this color to your desired color #1cb97d #FFA5A5*/
+}
+a:hover {
+    color: #486a72; /* Darker shade when hovered */
+    text-decoration: underline; /* Removes underline on hover */
+}
+
+.paper{
+    color: #62929E;
+    /* color: #F1FFE7; */
+    /* color: #EEE0CB; */
+    /* color: #D3F6DB; */
+    /* color: #F7D08A; */
+    font-weight: bold;
+}
+.paper a {
+    color: #62929E; /* Custom hyperlink color */
+    text-decoration: none; /* Ensures links are underline-free */
+}
+.paper a:hover {
+    color: #486a72; /* Darker shade when hovered */
+    text-decoration: underline; /* Removes underline on hover */
+}
+
+.social-link.linkedin {
+    color: #0077B5; /* LinkedIn color */
+}
+
+.social-link.github {
+    color: #C6C5B9; /* GitHub color */
+}
+
+.social-link.scholar
+{
+    color: #77b0be; /* Google Scholar color */
+}
+
+.highlight_footerText {
+    background-color: rgb(255, 255, 255); /* Highlight color */
+    padding: 0.2em; /* Optional: add some padding for better appearance */
+}
+
+
+.container {
+    display: flex;
+    max-width: max-content;
+    background: #1f2d33;
+    /* background: rgb(56, 34, 21); */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* .left, .right {
+    flex: 1;
+    padding: 20px;
+}
+.left {
+    border-right: 2px solid #ddd;
+} */
+.left {
+    flex: auto; /* Smaller section */
+    padding: 20px;
+    border-right: 2px solid #ddd; /* Partition moved to the left */
+}
+
+.right {
+    flex-shrink: 0; /* Larger section */
+    padding: 20px;
+}
+.containerSingle {
+    display: auto;
+    max-width: auto;
+    background: #1f2d33;
+    /* background: rgb(56, 34, 21); */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container {
+    background-color: white;
+    display: inline-block;
+    padding: 0px;
+    width: 100%; /* Ensures it takes full section width */
+    /* max-width: 180px; */
+    text-align: center; /* Centers the image */
+}
+.photo-container img {
+    width: 100%; /* Adapts to smaller section width */
+    max-width: 180px; /* Prevents exceeding these px */
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Removes extra spacing */
+    margin: 0 auto; /* Centers the image */
+}
