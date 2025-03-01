@@ -259,4 +259,16 @@ a:hover {
         padding-right: 0;
         margin-bottom: 10px;
     }
+    .skill-badges {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 10px;
+        display:block;
+    }
+    .skill {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 10px;
+        display: flex;
+    }
 }
