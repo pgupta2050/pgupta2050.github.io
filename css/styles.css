@@ -89,12 +89,31 @@ main {
     margin: 0 auto; /* Center the main content */
     flex: 1;
 }
-
 /* Add some spacing between sections */
 main section {
     margin-bottom: 20px;
     padding: 20px;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    main {
+        padding: 1em; /* Reduce padding */
+    }
+    main section {
+        padding: 15px;
+    }
+}
+@media (max-width: 480px) {
+    main {
+        padding: 0.5em; /* Further reduce padding */
+    }
+    main section {
+        padding: 10px;
+        box-shadow: none; /* Simplify for small screens */
+    }
+}
+
 
 footer {
     background-color: hsl(120, 19%, 74%);
