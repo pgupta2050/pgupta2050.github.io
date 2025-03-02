@@ -54,7 +54,7 @@ header h3 a {
 }
 
 /* Mobile Adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     header {
         flex-direction: row;
         text-align: center;
@@ -146,10 +146,6 @@ a:hover {
 
 .paper{
     color: #62929E;
-    /* color: #F1FFE7; */
-    /* color: #EEE0CB; */
-    /* color: #D3F6DB; */
-    /* color: #F7D08A; */
     font-weight: bold;
 }
 .paper a {
@@ -191,7 +187,7 @@ a:hover {
 }
 
 .left {
-    flex: 4 1 300px; /* Auto-adjusts width, min 300px */
+    flex: 4 1 700px; /* Auto-adjusts width, min 300px */
     padding: 20px;
     /* border-right: 2px solid #ddd; */
     text-align: center;
@@ -268,7 +264,7 @@ a:hover {
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
 }
 /* Responsive for Mobile */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .skills-container {
         grid-template-columns: 1fr; /* Stack category and badges */
         text-align: center;
@@ -289,5 +285,11 @@ a:hover {
         padding-right: 0;
         margin-bottom: 10px;
         display: flex;
+    }
+    .container{
+        padding: 3px;
+    }
+    .containersingle{
+        padding: 3px;
     }
 }
