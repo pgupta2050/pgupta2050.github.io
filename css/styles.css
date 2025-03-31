@@ -91,7 +91,7 @@ main {
 }
 /* Add some spacing between sections */
 main section {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 20px;
 }
 
@@ -239,6 +239,7 @@ a:hover {
     color: #C6C5B9;
     text-align: right;
     padding-right: 15px;
+    /* font-size: 14px; */
 }
 /* Badge styling */
 .skill-badges {
@@ -273,6 +274,7 @@ a:hover {
         text-align: center;
         padding-right: 0;
         margin-bottom: 10px;
+        width: 100%;
     }
     .skill-badges {
         text-align: center;
