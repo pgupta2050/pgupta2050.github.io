@@ -54,7 +54,7 @@
                     <p style="text-align: justify;">
                         Specifically, I study combined utilization of model-based and deep learning-based control techniques to improve vehicle behavior under unknowns. I do autonomy algorithm development, deployment and validation on real full-scale vehicles and robotic platforms utilizing ROS/ROS2. Through leadership roles in industry and research oriented projects, I have developed a solid understanding of systems level engineering, integration and architectures needed for real-world deployment.</p>
                     <p style="text-align: justify;"> My recent work on learning-augmented model predictive control has appeared at ICRA 2025 and ACC 2026. 
-                        You can view my key projects on the <a href="projects.html">Projects page</a>. My condensed resume can be found here: <a href="./assets/PrakharGupta_Resume.pdf" target="_blank">Resume</a>
+                        You can view my key projects below, and my condensed resume can be found here: <a href="./assets/PrakharGupta_Resume.pdf" target="_blank">Resume</a>
                         <!-- ,and full CV  <a href="./assets/PrakharGupta_CV.pdf" target="_blank">CV</a> -->
                         .
                          <!-- and a shorter resume can be viewed <a href="assets/PrakharGupta_Resume.pdf">here</a>  -->
@@ -106,6 +106,123 @@
                     <span class="skill">Simulink / MATLAB</span>
                 </div>
             </div>
+
+        </section>
+
+        <section>
+            <h2 style="text-align: center;">Selected Projects</h2>
+
+            <article class="project">
+            <h3>Learning Augmented Model-Based Optimization Controls (2022-2026)</h3>
+        
+                <p><strong><u>Problem statement</u>:</strong> Off-road autonomy missions face many unknown terrains and dynamics where nominal models for mobility controls do not suffice. Can we utilize reinforcement learning to enable fast adaptation of MPC and life-long learning for performant vehicle controls?</p>
+                <p><strong><u>Approach</u>:</strong> Vision informed residual learning</p>
+
+                <ul>
+                    <li>Reducing data dependency by leveraging nominal models and increasing generalization of the controller across different driving conditions</li>
+                    <li>Formulating and investigating hybrid reinforcement learning control architecture to handle modeling mismatches and unmodeled system dynamics<br>
+                        <!-- <div style="background-color: white; display: inline-block; padding: 10px;">
+                            <img src="images/architecture.png" alt="Actor-Critic Cooperative Compensation to MPC" width=100% max-width=500px>
+                        </div> -->
+                        <div class="image-container">
+                            <img src="images/architecture.png" alt="Actor-Critic Cooperative Compensation to MPC">
+                        </div>
+                    <li>The results show that learning augmented controls not only outperform model based (MPC) a purely learnt (AC) controllers across previously unseen scenarios, but also improve smoothness of control.<br>
+                        <div class="image-container">
+                        <img src="images/ComparisonStats_icra.png" alt="Statistics for AC3MPC" style="width: 100%; max-width: 700px;">
+                    </div>
+                    </li>
+                    <li>Using vision foundation models to inform offline and online life-long learning for adaptation to tasks and terrains</li>
+                    <li>Validating in simulation and on a drive-by-wire Polaris RZR vehicle on off-road terrains<br>
+                        <!-- (<a href="https://drive.google.com/file/d/16iGDZUhORoUeUQKTEyXh66w7balQFM2e/view?usp=drive_link">Off-road Autonomous Video</a>) -->
+                    <iframe src="https://drive.google.com/file/d/1dY2So-o7_kiHzgrjSi2u_nErWJxI4hsM/preview" width="350" height="200" allow="autoplay" frameborder="0"></iframe>
+                    <iframe src="https://drive.google.com/file/d/16iGDZUhORoUeUQKTEyXh66w7balQFM2e/preview" width="350" height="200" allow="autoplay" frameborder="0"></iframe>  
+                    </li>
+                </ul>
+
+
+            </article>
+
+            <article class="project">
+                <h3>Energy Efficient Cooperative Autonomous Driving (2022-2024)</h3>
+                <p><strong><u>Problem statement</u>:</strong> How can we improve energy efficiency for urban driving corridors using V2X?</p>
+                <p><strong><u>Approach</u>:</strong> Constrianed optimal control.</p>
+
+                <ul>
+                    <li>Research aimed to improve energy efficiency through V2V, V2I connectivity by informing lane switching and acceleration strategy on connected traffic corridors</li>
+                    <li>Experimental results on an in-house drive-by-wire Mazda CX7 showed up to 36% improvements</li>
+                    <li>Expert skills for on-vehicle control deployment using real-time solvable MPC with efficient vehicle model and other state-of-the-art controllers<br>
+                        <div class="image-container">
+                            <img src="images/xil_anl.png" alt="XiL setup for CAV control and planning">
+                        </div>
+                    </li>
+                    <li>Collaborators: This work was led by many researchers including Jihun Han, Tyler Ard, Tony Wang</li>
+                </ul>
+
+            </article>
+
+            <article class="project">
+
+                <h3> Physics Conditioned GAN for Video Frame Prediction </h3>
+
+                <p><strong><u>Problem statement</u>:</strong> How can physics constraints improve generative predictions for urban autonomous driving?</p>
+                <p><strong><u>Approach</u>:</strong> Physics conditioned GAN.</p>
+
+                <p> We build upon the ideas from Retrospective Cycle GAN (Kwon et al). They established great performance compared to the SOTA with their forward and backward temporal consistency idea for training the generator. However, they do not consider any conditioning on physics or restrict the movement of pixels explicitly. We ask the following question: "Can we improve blurring in longer term predictions through the use of physics constraints?" </p>
+                <p> Future Video Frame Prediction performance with conditional Generative Adversarial Network (GAN) is shown below. More details can be found on the <a target="_blank" href="https://pgupta2050.github.io/conditional_rcgan/">project webpage</a>    </p>
+                <p> Tools used: PyTorch, sklearn etc.</p>
+
+                <ol>
+                    <!-- <embed src="https://pgupta2050.github.io/conditional_rcgan/" style="width:100%; height: 400px; max-width: 700px;"> -->
+                    <div class="image-container">
+                        <img src="https://pgupta2050.github.io/conditional_rcgan/assets/images/rcgan_kine_loss1.png" alt="Architecture of the project" style="width: 100%; max-width: 700px;">
+                    </div>
+                    <div class="image-container">
+                        <img src="https://pgupta2050.github.io/conditional_rcgan/assets/images/result_0.png" alt="Architecture of the project" style="width: 100%; max-width: 700px;">
+                    </div>
+                    <div class="image-container">
+                        <a href="https://pgupta2050.github.io/conditional_rcgan/" target="_blank"> 
+                            <img src="https://pgupta2050.github.io/conditional_rcgan/assets/images/results_e99.png" alt="Thumbnail of the project page" style="width: 100%; max-width: 700px; cursor: pointer;">
+                        </a>
+                    </div>
+
+                </ol>  
+                
+            </article>
+
+            <article class="project">
+
+                <h3>Deep Orange 13 (2021-2022)</h3>
+                
+                <ul>
+                    <li>Utilized systems engineering principles to arrive at engineering requirements for mission critical needs.</li>
+                    <li>Implemented fully autonomous navigation for off-road driving using cameras, lidars, GNSS over ROS (Robot Operating Software) on small and full-scale platforms</li>
+                    <li>Designed and developed in-house Drive-by-Wire vehicle controls architecture using New Eagle Raptor controller and ROS with C++ and Python</li>
+                    <li>Model based control and logic development in MATLAB/Simulink for embedded deployment on-board</li>
+                    <li>H-i-L and S-i-L testing for vehicle controls
+                        <ol>
+                        <iframe style=" height:auto; max-width: 600px; aspect-ratio: 2.35 / 1 ;" src="images/brakes_hil_do13.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe> 
+                        </ol>
+                    </li>
+                    <li>Communications and vehicle networking using CAN, Ethernet, wireless short-range communications</li>
+                    <!-- <li>Autonomous Driving: <a target="_blank" href="https://youtu.be/-3aHWvhB948?si=D0msltdSMgwJUbz3">Unmanned Autonomous Deep Orange 13-14</a>, <a href="https://drive.google.com/file/d/1lENI4qCQLdiGndaWNEGr-9OBTlcZHGf_/view?usp=sharing">Manned Autonomous</a></li> -->
+                    <li> Autonomous Driving:
+                        <ol> 
+                            <iframe src="images/do_autonomy.mp4" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                            <iframe src="https://www.youtube.com/embed/-3aHWvhB948?si=nxTh78r6tBTcewFl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+                            <!-- <iframe src="https://www.youtube.com/embed/B7_-ia0J6QU?si=_3jAVg8k1q66tMSX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  -->
+                            
+                        </ol>
+                    </li>
+                    <li> Manned Autonomous: 
+                        <ol>
+                            <iframe src="https://drive.google.com/file/d/1lENI4qCQLdiGndaWNEGr-9OBTlcZHGf_/preview" width="300" height="200" allow="autoplay" frameborder="0" ></iframe>
+                        </ol>
+                    </li>
+                </ul>
+
+            </article>
+
 
         </section>
 

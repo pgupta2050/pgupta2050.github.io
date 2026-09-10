@@ -11,6 +11,7 @@ body {
     /* align-items: center; */
 }
 
+
 header {
     background-color: #314852;
      /* rgb(70, 70, 70); */
@@ -53,7 +54,7 @@ header h3 a {
     text-decoration: none;
 }
 
-/* Mobile Adjustments */
+/* Mobile Adjustments for header */
 @media (max-width: 768px) {
     header {
         flex-direction: row;
@@ -95,12 +96,45 @@ main section {
     padding: 20px;
 }
 
+
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+/* Alternating Background Colors for Project Sections */
+.project:nth-child(odd) {
+    background-color: #1f2d3394; /* same */
+    padding: 20px;
+    border-radius: 10px;
+    width: 85%; /* Adjust width as needed */
+    margin-left: auto; /* Align left */
+
+}
+.project:nth-child(even) {
+    background-color: #1f2d3394; /* dark green */
+    padding: 20px;
+    border-radius: 10px;
+    width: 85%; /* Adjust width as needed */
+    margin-left: 0; /* Align right */
+}
+
+.project h3 {
+    color: #c3763b;
+    margin-top: 0;
+    font-size: 1.25rem;
+    /* background-color: #1f2d33; */
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     main {
         padding: 1em; /* Reduce padding */
     }
     main section {
+        padding: 15px;
+    }
+    .project {
         padding: 15px;
     }
 }
@@ -112,6 +146,38 @@ main section {
         padding: 10px;
         box-shadow: none; /* Simplify for small screens */
     }
+    .project {
+        padding: 10px;
+    }
+}
+
+
+
+
+.image-container {
+    background-color: white;
+    display: inline-block;
+    padding: 10px;
+    width: 100%; /* Ensures it takes full section width */
+    max-width: 700px;
+    text-align: center; /* Centers the image */
+}
+
+.image-container img {
+    width: 100%; /* Adapts to smaller section width */
+    max-width: 700px; /* Prevents exceeding 700px */
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Removes extra spacing */
+    margin: 0 auto; /* Centers the image */
+}
+
+section iframe {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    /* display: block; */
+    margin: 0 auto;
 }
 
 
@@ -221,7 +287,8 @@ a:hover {
     /* max-width: 800px; */
     margin: 20px auto;
     padding: 20px;
-    background: #1f2d33;
+    /* background: #1f2d33; */
+        /* background: #1f2d33; */
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
